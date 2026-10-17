@@ -2,7 +2,7 @@
 
 Renaming, moving, adopting and forgetting resources in Terraform state without destroying anything. A script walks one state through five refactors and asserts what `terraform plan` says at each step.
 
-> **What is verified.** `demo.sh` ran on 2026-10-17 with Terraform 1.16.5 (Git Bash on Windows): **15 checks passed, 0 failed**. CI runs the same script on Linux. All resources are `hashicorp/local` files plus `terraform_data`, so no cloud account is involved. Real cloud resources have behaviours this does not model (see limits).
+> **What is verified.** `demo.sh` ran on 2026-10-17 with Terraform 1.16.5 (Git Bash on Windows): **15 checks passed, 0 failed**. GitHub Actions (Linux) ran the same script and passed (2026-10-17). All resources are `hashicorp/local` files plus `terraform_data`, so no cloud account is involved. Real cloud resources have behaviours this does not model (see limits).
 
 ## The five stages (`stages/`)
 
